@@ -3,35 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nouman Portfolio</title>
-    <link rel="stylesheet" href="styles.css">       
+    <title>Nouman Ali - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <div id="header">
+    <!-- Navigation -->
+    <nav>
         <div class="container">
-            <nav>
-                <img src="images/vonet.png" class="logo" alt="Logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Resume</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact me</a></li>
-                </ul>
-            </nav>
-            <div class="header-text">
-                <h1>Hi, I'm <span>Nouman Ali</span></h1>
-                <p>Frontend Developer | Self-Taught Coder</p>
+            <a href="index.html" class="logo">Nouman Ali</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="full-screen">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hi, I'm <span class="gradient-text">Nouman Ali</span></h1>
+                <p class="subtitle">Frontend Developer | Self-Taught Coder</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn primary">Contact Me <i class="fas fa-paper-plane"></i></a>
+                    <a href="#" class="btn secondary">Download CV <i class="fas fa-download"></i></a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/code-nouman"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-codepen"></i></a>
+                    <a href="#"><i class="fab fa-leet-code"></i></a> 
+                </div>
             </div>
         </div>
-    </div>
-
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p class="about-description">Hi, I'm Muhammad Nouman Ali, a passionate Frontend Developer focused on creating dynamic and engaging websites. I specialize in HTML, CSS, and JavaScript, with a growing interest in learning and improving my skills every day. I’m currently building my portfolio to showcase my journey and the projects I have worked on.</p>
-            <p class="about-description">Although still early in my career, I believe in the power of continuous learning and challenge myself to grow with each project. My focus is on building user-friendly interfaces that combine form and function, making them not only beautiful but also intuitive to use.</p>
-            <p class="about-description">Feel free to connect with me, explore my projects, and follow my journey as I continue to develop my skills as a web developer.</p>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
         </div>
     </section>
 </body>
