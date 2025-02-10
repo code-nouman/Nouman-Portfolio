@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 
@@ -33,9 +33,14 @@ nav {
     width: 150px;
 }
 
+nav ul {
+    display: flex;
+    padding: 0;
+    list-style: none;
+}
+
 nav ul li {
     display: inline-block;
-    list-style: none;
     margin: 10px 20px;
 }
 
@@ -43,4 +48,85 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 20px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    background-image: linear-gradient(to right, #a549e8, #e43aad);
+    transition: width 0.5s ease-in-out;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header-text {
+    margin-top: 20%;
+    font-size: 30px;
+    text-align: center;
+}
+
+.header-text h1 {
+    font-size: 70px;
+    margin-top: 20px;
+}
+
+.header-text h1 span {
+    background: linear-gradient(to right, #a020f0, #ff1493);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#about {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 60px 10%;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#about h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #a020f0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#about .about-description {
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: center;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#about p {
+    margin-bottom: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #about {
+        padding: 40px 5%;
+    }
+
+    #about h2 {
+        font-size: 28px;
+    }
+
+    #about .about-description {
+        font-size: 16px;
+    }
 }
