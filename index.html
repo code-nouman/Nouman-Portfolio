@@ -5,42 +5,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nouman Ali - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <nav>
         <div class="container">
-            <a href="index.html" class="logo">Nouman Ali</a>
+            <a href="#hero" class="logo">Nouman Ali</a>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="blogs.html">Blogs</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <section id="home" class="full-screen">
+    <!-- Hero Section -->
+    <section id="hero">
         <div class="container">
             <div class="hero-content">
                 <h1>Hi, I'm <span class="gradient-text">Nouman Ali</span></h1>
                 <p class="subtitle">Frontend Developer | Self-Taught Coder</p>
                 <div class="cta-buttons">
-                    <a href="contact.html" class="btn primary">Contact Me <i class="fas fa-paper-plane"></i></a>
-                    <a href="#" class="btn secondary">Download CV <i class="fas fa-download"></i></a>
+                    <a href="#contact" class="btn btn-primary">Contact Me <i class="fas fa-paper-plane"></i></a>
+                    <a href="#" class="btn btn-secondary">Download CV <i class="fas fa-download"></i></a>
                 </div>
                 <div class="social-links">
-                    <a href="https://github.com/code-nouman"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
                     <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
                     <a href="#"><i class="fab fa-codepen"></i></a>
-                    <a href="#"><i class="fab fa-leet-code"></i></a> 
                 </div>
             </div>
         </div>
-        <div class="scroll-indicator">
-            <i class="fas fa-chevron-down"></i>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Hi, I'm Muhammad Nouman Ali, a passionate Frontend Developer focused on creating dynamic and engaging websites. I specialize in HTML, CSS, and JavaScript, with a growing interest in learning and improving my skills every day.</p>
+                    <p>Although new to programming, my focus is on building user-friendly interfaces that combine form and function.</p>
+                </div>
+                <div class="about-image">
+                    <img src="images/profile.png" alt="Nouman Ali">
+                </div>
+            </div>
         </div>
     </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-brands fa-python"></i>
+                    <h3>Python</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-github"></i>
+                    <h3>Github</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-git-alt"></i>
+                    <h3>Git</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="images/project1.png" alt="To do list">
+                    <div class="project-info">
+                        <h3>To-Do List App</h3>
+                        <p>simple and responsive to-do list with drag-and-drop functionality.</p>
+                        <a href="https://nouman-todolist-projects.netlify.app/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <form class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
